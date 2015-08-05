@@ -1,6 +1,8 @@
 package com.example.fragment;
 
 import android.support.v7.app.AppCompatActivity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
 		b.setOnClickListener( 
 				new OnClickListener(){
 					public void onClick(View v){
-						
-						
-					}
+						FragmentTransaction ft=getFragmentManager().beginTransaction();
+						longFrag lf=new longFrag();
+						ft.add(R.id.ly,lf); ft.commit();
+						}
 				});
 		
 		b.setOnLongClickListener(
