@@ -1,0 +1,15 @@
+package n;
+
+public class a {
+
+	
+	public static void main(String args[]){
+		int[] emp_id={71005,71006,71007,71008,71009,71010};
+		char[] emp_job={'D','B','c','A','B','C'};
+		char[] emp_status={'Y','N','Y','Y','Y','N'};
+		for (int i=0;i<6;i++){
+			System.out.print("Employee id is "+emp_id[i]+". Employee job is "+emp_job[i]+". Employee status is "+emp_status[i] );
+		}
+		
+	}
+}

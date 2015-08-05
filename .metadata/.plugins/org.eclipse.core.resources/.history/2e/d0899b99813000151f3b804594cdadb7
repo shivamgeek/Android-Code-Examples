@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="small">this string is made by me</string>
+    <string name="large">this is main activity page</string>
+    <string name="Click_Me">Click Me</string>
+    <string-array name="names">
+        <item>shivam</item>
+        <item>shiv</item>
+        <item>amit</item>
+        <item>umang</item>
+        
+    </string-array>
+
+</resources>
