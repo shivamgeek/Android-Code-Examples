@@ -1,0 +1,29 @@
+package com.example.newdb;
+
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+public class data extends Fragment {
+View v;
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		 v=inflater.inflate(R.layout.data,container,false);
+		return v;
+	}
+	
+	public void set(String[] a){
+		TextView t1=(TextView)v.findViewById(R.id.textView3);
+		TextView t2=(TextView)v.findViewById(R.id.textView4);
+		t1.setText(s[0]);
+		t2.setText(s[1]);
+		
+	}
+
+	
+
+}

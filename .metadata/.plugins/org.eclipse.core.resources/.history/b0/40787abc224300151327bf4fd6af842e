@@ -1,0 +1,23 @@
+package anonymous;
+
+public class any {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+ class a{
+	 
+ }
+
+ class b extends a{
+	 
+ }

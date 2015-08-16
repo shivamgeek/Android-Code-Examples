@@ -1,0 +1,23 @@
+package anonymous;
+
+public class any {
+
+	public static void main(String[] args) {
+		
+		dog d=new dog(){void s(){}};
+		d.s();
+		
+		
+		
+
+	}
+
+}
+
+
+ class dog{
+	void s(){
+		System.out.println("Hi dog");
+	}
+	
+}
