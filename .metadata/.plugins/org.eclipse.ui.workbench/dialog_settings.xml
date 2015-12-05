@@ -8,7 +8,7 @@
 		<item value="526" key="dialogHeight"/>
 		<item value="1025" key="dialogWidth"/>
 		<list key="textEntries">
-			<item value="1"/>
+			<item value="2"/>
 		</list>
 		<list key="orderedElements">
 			<item value="com.android.ide.eclipse.ddms.views.LogCatView"/>
@@ -18,12 +18,12 @@
 		</list>
 		<list key="textArray">
 			<item value="log"/>
+			<item value="lo"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="com.android.ide.eclipse.adt.project.NewProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="com.android.ide.eclipse.wizards.category"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

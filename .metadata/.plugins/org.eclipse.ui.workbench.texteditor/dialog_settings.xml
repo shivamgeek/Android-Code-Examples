@@ -2,22 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="singleTask" key="selection"/>
+		<item value=" class My_Ibinder extends Binder{" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=" class My_Ibinder extends Binder{"/>
+			<item value="Log.i"/>
+			<item value="Log.e"/>
+			<item value="rem is"/>
+			<item value="game"/>
 			<item value="singleTop"/>
 			<item value="textView1"/>
 			<item value="activity_horizontal_margin"/>
-			<item value="paddingRight"/>
-			<item value="layout_width"/>
-			<item value="match_parent"/>
-			<item value="match"/>
-			<item value="activity"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Log.e"/>
+			<item value="Log.i"/>
 			<item value="singleTask"/>
 		</list>
 	</section>

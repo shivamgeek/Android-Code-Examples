@@ -8,22 +8,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.asynctaskexample.MainActivity" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:text="Press" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Main thread"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="74dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Start async task" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/button1"
-        android:layout_marginTop="40dp"
-        android:text="Start" />
+        android:layout_marginTop="54dp"
+        android:text="Async task waiting to be run"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

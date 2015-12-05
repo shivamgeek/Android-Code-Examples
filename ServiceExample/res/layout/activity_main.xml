@@ -8,20 +8,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.serviceexample.MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="Start Service" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/b2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="56dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Button" />
+        android:layout_alignLeft="@+id/b1"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="76dp"
+        android:text="Stop Service" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b2"
+        android:layout_below="@+id/b2"
+        android:layout_marginTop="84dp"
+        android:text="Output here" />
 
 </RelativeLayout>

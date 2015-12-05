@@ -5,13 +5,27 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
+Button b;
+static TextView tv1 ,tv2;
+String s="Main thread... ";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		b=(Button)findViewById(R.id.button1);
+		tv1=(TextView)findViewById(R.id.textView1);
+		tv2=(TextView)findViewById(R.id.textView2);
+		final String a[]=new String[]{"2","5"};
+		b.setOnClickListener(new OnClickListener(){      public void onClick(View v){       new task().execute(a);      }});
+		
+			
 	}
 
 	@Override

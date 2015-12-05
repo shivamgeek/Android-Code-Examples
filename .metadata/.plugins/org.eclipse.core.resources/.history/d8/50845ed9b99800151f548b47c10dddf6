@@ -1,0 +1,35 @@
+package com.example.asynctaskexample;
+
+import android.os.AsyncTask;
+
+public class task extends AsyncTask<String,Integer,String> {
+String s="Async task running..";
+	
+	protected String doInBackground(String... params) {
+		for(int i=0;i<6;i++){
+			publishProgress(i);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		return "Task completed";
+	}
+	
+	
+	protected void onProgressUpdate(Integer...strings ){
+		s=s+strings[0];
+		MainActivity.tv1.setText(s);
+	}
+	
+	
+	protected void onPostExecute(String...strings )
+	{
+		s=s+strings[0];
+		MainActivity.tv1.setText(s);
+	}
+
+}

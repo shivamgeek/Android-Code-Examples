@@ -1,0 +1,55 @@
+package com.example.boundserviceexample;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.Binder;
+import android.os.IBinder;
+import android.util.Log;
+
+public class service extends Service {
+IBinder ob=new My_Ibinder();
+		
+@Override
+public void onCreate() {
+Log.e("SERVICE CREATED","");
+
+}
+
+
+
+@Override
+public int onStartCommand(Intent intent, int flags, int startId) {
+	Log.e("SERVICE OnStartCommand","");
+	return super.onStartCommand(intent, flags, startId);
+}
+
+
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		Log.e("SERVICE onBind","");
+		return ob;
+	}
+
+	
+	
+	        class My_Ibinder extends Binder{
+	        	public service get_MyService(){
+		        	return service.this;
+		        }
+		
+	          }
+	
+	@Override
+	public void onDestroy() {
+		Log.e("SERVICE DESTROYED","");
+		super.onDestroy();
+	}
+	
+	String data(){
+		return "DATA SUCCESSFULLY TRANSFERRED";
+	}
+	
+}
+
+

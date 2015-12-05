@@ -1,0 +1,48 @@
+package com.example.asynctaskexample;
+
+import android.os.AsyncTask;
+import android.widget.Toast;
+
+public class task extends AsyncTask<String,Integer,String> {
+String s="Async task running.. ";
+	
+	protected String doInBackground(String... params) {
+		for(int i=0;i<6;i++){
+			publishProgress(i);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+		int a=Integer.parseInt(params[0]);
+		int b=Integer.parseInt(params[1]);
+		
+		return ""+a*b;
+	}
+	
+	
+	protected void onProgressUpdate(Integer...strings ){
+		s=s+strings[0]+" ";
+		MainActivity.tv2.setText(s);
+	}
+	
+	
+	protected void onPostExecute(String...strings )
+	{
+		
+		/*try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		//MainActivity.tv2.setText(strings[0]);
+		MainActivity.tv2.setText("kjgkjghjgjl");
+		
+	}
+
+}
